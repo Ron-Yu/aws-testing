@@ -11,6 +11,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "yarn build && aws s3 cp build/ s3://super-ron.info --recursive",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
